@@ -15,10 +15,7 @@ export const getBooks = async (req, res) => {
       success: true,
     });
   } catch (err) {
-    console.log(err);
-    
     return res.status(500).json({
-
       success: false,
       message: "Failed to fetch books",
     });
